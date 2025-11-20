@@ -6,6 +6,9 @@ function submitFeedback() {
     const designation = document.getElementById('designation').value;
     const productType = document.getElementById('productType').value;
     const feedback = document.getElementById('feedbackText').value;
+    const userExperience = document.getElementById('userExperince').value;
+
+
 
     // Show thank you message
     alert('Thank you for your valuable feedback');
@@ -18,6 +21,8 @@ function submitFeedback() {
     document.getElementById('userDesignation').innerHTML = designation;
     document.getElementById('userProductChoice').innerHTML = productType;
     document.getElementById('userFeedback').innerHTML = feedback;
+    document.getElementById('displayExperience').innerHTML = userExperience;
+
 
     // Make hidden div visible
     document.getElementById('userInfo').style.display = 'block';
